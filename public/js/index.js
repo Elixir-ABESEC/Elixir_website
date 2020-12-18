@@ -54,3 +54,10 @@ setTimeout(() => {
     delay: (el, i) => 30 * i
   });
 }, 2000);
+
+// var spinnerBox = document.querySelector('.spinner-box');
+
+// window.addEventListener('load', function() {
+
+//   spinnerBox.parentElement.removeChild(spinnerBox);
+// });
