@@ -109,3 +109,19 @@
        opacity: 0;
         
       }
+
+@media screen and (max-width:991px){
+  #particles-js {
+    position: fixed;
+}
+#main{
+  position: absolute;
+}
+.ml15 .word{
+  font-size: 2.8em;
+}
+
+.ml16 .letter{
+  font-size: 1.2em;
+}
+}
