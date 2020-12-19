@@ -2,6 +2,22 @@ particlesJS("particles-js", { "particles": { "number": { "value": 431, "density"
 
 const el = document.querySelector("#main");
 
+
+window.onload = () =>{
+    setTimeout(() => {
+      anime.timeline({loop: false}).add({
+        targets: '.spinner-box',
+        scale: [1,14],
+        opacity: [1,0],
+        easing: "easeOutCirc",
+        duration: 800,
+        delay: (el, i) => 1000 * i
+      });
+
+    }, 700);
+    
+  
+}
 el.addEventListener("mousemove", (e) => {
   el.style.backgroundPositionX = -e.offsetX + "px";
   el.style.backgroundPositionY = -e.offsetY + "px";
@@ -19,7 +35,7 @@ setTimeout(() => {
   });
 
   
-}, 500);
+}, 1000);
 
 setTimeout(() => {
     $(".ml15 .tagline").css("opcaity:1");
@@ -32,7 +48,8 @@ setTimeout(() => {
     duration: 800,
     delay: (el, i) => 1000 * i
   });
-}, 1000);
+  $(".spinner-box").hide();
+}, 1500);
 
 var textWrapper = document.querySelector('.ml16');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
@@ -53,4 +70,11 @@ setTimeout(() => {
     duration: 1400,
     delay: (el, i) => 30 * i
   });
-}, 2000);
+}, 2500);
+
+// var spinnerBox = document.querySelector('.spinner-box');
+
+// window.addEventListener('load', function() {
+
+//   spinnerBox.parentElement.removeChild(spinnerBox);
+// });
