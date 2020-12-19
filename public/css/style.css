@@ -78,12 +78,15 @@
     }
     /* LOADER ANIMATION */
     .spinner-box {
-      width: 300px;
-      height: 300px;
+      width: 100%;
+      height: 100%;
+      position: fixed;
       display: flex;
+      z-index: 1001;
       justify-content: center;
       align-items: center;
-      background-color: black;
+      background-color: transparent;
+      transition: all 0.1s ease;
     }
     .leo {
       position: absolute;
