@@ -23,7 +23,7 @@ el.addEventListener("mousemove", (e) => {
   el.style.backgroundPositionY = -e.offsetY + "px";
 });
 setTimeout(() => {
-    $(".ml15 .word").css("opcaity:1");
+    $(".ml15 .word").css("opacity:1");
     anime.timeline({loop: false})
   .add({
     targets: '.ml15 .word',
@@ -38,7 +38,7 @@ setTimeout(() => {
 }, 1000);
 
 setTimeout(() => {
-    $(".ml15 .tagline").css("opcaity:1");
+    $(".ml15 .tagline").css("opacity:1");
     anime.timeline({loop: false})
   .add({
     targets: '.ml15 .tagline',
