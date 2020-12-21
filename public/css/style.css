@@ -232,12 +232,7 @@
        
       }
       
-      .ml16 .letter {
-        display: inline-block;
-        line-height: 1em;
-       opacity: 0;
-        
-      }
+      
 
 @media screen and (max-width:991px){
   #particles-js {
@@ -248,9 +243,5 @@
 }
 .ml15 .word{
   font-size: 2.8em;
-}
-
-.ml16 .letter{
-  font-size: 1.2em;
 }
 }
