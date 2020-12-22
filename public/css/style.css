@@ -4,16 +4,16 @@
       from {
         transform: rotate(0);
       }
-      to{
+      to {
         transform: rotate(359deg);
       }
     }
 
     @keyframes spin3D {
       from {
-        transform: rotate3d(.5,.5,.5, 360deg);
+        transform: rotate3d(.5, .5, .5, 360deg);
       }
-      to{
+      to {
         transform: rotate3d(0deg);
       }
     }
@@ -65,19 +65,21 @@
       }
     }
 
+    /* ---- reset ---- */
 
-      /* ---- reset ---- */
-      body {
-        margin: 0;
-        font: normal 75% Arial, Helvetica, sans-serif;
-        /* cursor: url('https://i.ibb.co/7V07ngz/Ufo-e.png'),pointer; */
+    body {
+      margin: 0;
+      font: normal 75% Arial, Helvetica, sans-serif;
+      /* cursor: url('https://i.ibb.co/7V07ngz/Ufo-e.png'),pointer; */
     }
 
     canvas {
-        display: block;
-        vertical-align: bottom;
+      display: block;
+      vertical-align: bottom;
     }
+
     /* LOADER ANIMATION */
+
     .spinner-box {
       width: 100%;
       height: 100%;
@@ -89,6 +91,7 @@
       background-color: transparent;
       transition: all 0.1s ease;
     }
+
     .leo {
       position: absolute;
       display: flex;
@@ -138,110 +141,108 @@
     }
 
     /* END */
+
     /* ---- particles.js container ---- */
+
     #particles-js {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: #000000;
-        background-image: url("");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 50% 50%;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #000000;
+      background-image: url("");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
     }
 
     /* ---- stats.js ---- */
+
     .count-particles {
-        background: #000022;
-        position: absolute;
-        top: 48px;
-        left: 0;
-        width: 80px;
-        color: #13E8E9;
-        font-size: .8em;
-        text-align: left;
-        text-indent: 4px;
-        line-height: 14px;
-        padding-bottom: 2px;
-        font-family: Helvetica, Arial, sans-serif;
-        font-weight: bold;
+      background: #000022;
+      position: absolute;
+      top: 48px;
+      left: 0;
+      width: 80px;
+      color: #13E8E9;
+      font-size: .8em;
+      text-align: left;
+      text-indent: 4px;
+      line-height: 14px;
+      padding-bottom: 2px;
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: bold;
     }
 
     .js-count-particles {
-        font-size: 1.1em;
+      font-size: 1.1em;
     }
 
-    #stats,
-    .count-particles {
-        -webkit-user-select: none;
-        margin-top: 5px;
-        margin-left: 5px;
+    #stats, .count-particles {
+      -webkit-user-select: none;
+      margin-top: 5px;
+      margin-left: 5px;
     }
 
     #stats {
-        border-radius: 3px 3px 0 0;
-        overflow: hidden;
+      border-radius: 3px 3px 0 0;
+      overflow: hidden;
     }
 
     .count-particles {
-        border-radius: 0 0 3px 3px;
+      border-radius: 0 0 3px 3px;
     }
 
+    #main {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1000;
+    }
 
-#main{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    z-index: 1000;
-}
     .ml15 {
-        color:#fff;
-        font-weight: 800;
+      color: #fff;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5em;
+    }
 
-        text-transform: uppercase;
-        letter-spacing: 0.5em;
+    .ml15 .word {
+      font-size: 4.8em;
+      cursor: pointer;
+    }
 
+    .ml15 .word, .ml15 .tagline {
+      text-align: center;
+      display: block;
+      letter-spacing: normal !important;
+      opacity: 0;
+    }
+
+    .ml15 .tagline {
+      font-size: 0.8em !important;
+      color: rgb(156, 205, 224);
+    }
+
+    .ml16 {
+      text-align: center;
+      color: #cabbbb;
+      padding: 40px 0;
+      font-weight: 800;
+      font-size: 2em;
+      text-transform: uppercase;
+      letter-spacing: 0.5em;
+      overflow: hidden;
+    }
+
+    @media screen and (max-width:991px) {
+      #particles-js {
+        position: fixed;
       }
-      .ml15 .word{
-        font-size: 4.8em;
+      #main {
+        position: absolute;
       }
-
-      .ml15 .word,.ml15 .tagline {
-        text-align: center;
-        display: block;
-        letter-spacing: normal !important;
-        opacity: 0;
-
+      .ml15 .word {
+        font-size: 2.8em;
       }
-
-      .ml15 .tagline{
-        font-size: 0.8em !important;
-        color:rgb(156, 205, 224);
-      }
-
-      .ml16 {
-        text-align: center;
-        color: #cabbbb;
-        padding: 40px 0;
-        font-weight: 800;
-        font-size: 2em;
-        text-transform: uppercase;
-        letter-spacing: 0.5em;
-        overflow: hidden;
-
-      }
-
-
-
-@media screen and (max-width:991px){
-  #particles-js {
-    position: fixed;
-}
-#main{
-  position: absolute;
-}
-.ml15 .word{
-  font-size: 2.8em;
-}
-}
+    }
