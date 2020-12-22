@@ -8,5 +8,5 @@ function play() {
    document.querySelector(".text").style.visibility = "hidden";
    setTimeout(function () {
       video.pause();
-   }, 2000);
+   }, 3900);
 }
