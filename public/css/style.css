@@ -4,16 +4,16 @@
       from {
         transform: rotate(0);
       }
-      to{
+      to {
         transform: rotate(359deg);
       }
     }
 
     @keyframes spin3D {
       from {
-        transform: rotate3d(.5,.5,.5, 360deg);
+        transform: rotate3d(.5, .5, .5, 360deg);
       }
-      to{
+      to {
         transform: rotate3d(0deg);
       }
     }
@@ -64,20 +64,22 @@
         transform: scale(.75);
       }
     }
-      
-      
-      /* ---- reset ---- */
-      body {
-        margin: 0;
-        font: normal 75% Arial, Helvetica, sans-serif;
-        cursor: url('https://i.ibb.co/7V07ngz/Ufo-e.png'),pointer;
+
+    /* ---- reset ---- */
+
+    body {
+      margin: 0;
+      font: normal 75% Arial, Helvetica, sans-serif;
+      /* cursor: url('https://i.ibb.co/7V07ngz/Ufo-e.png'),pointer; */
     }
 
     canvas {
-        display: block;
-        vertical-align: bottom;
+      display: block;
+      vertical-align: bottom;
     }
+
     /* LOADER ANIMATION */
+
     .spinner-box {
       width: 100%;
       height: 100%;
@@ -89,6 +91,7 @@
       background-color: transparent;
       transition: all 0.1s ease;
     }
+
     .leo {
       position: absolute;
       display: flex;
@@ -96,152 +99,150 @@
       align-items: center;
       border-radius: 50%;
     }
-    
+
     .blue-orbit {
       width: 165px;
       height: 165px;
       border: 1px solid #91daffa5;
       -webkit-animation: spin3D 3s linear .2s infinite;
     }
-    
+
     .green-orbit {
       width: 120px;
       height: 120px;
       border: 1px solid #91ffbfa5;
       -webkit-animation: spin3D 2s linear 0s infinite;
     }
-    
+
     .red-orbit {
       width: 90px;
       height: 90px;
       border: 1px solid #ffca91a5;
       -webkit-animation: spin3D 1s linear 0s infinite;
     }
-    
+
     .white-orbit {
       width: 60px;
       height: 60px;
       border: 2px solid #ffffff;
       -webkit-animation: spin3D 10s linear 0s infinite;
     }
-    
+
     .w1 {
       transform: rotate3D(1, 1, 1, 90deg);
     }
-    
+
     .w2 {
       transform: rotate3D(1, 2, .5, 90deg);
     }
-    
+
     .w3 {
       transform: rotate3D(.5, 1, 2, 90deg);
     }
 
     /* END */
+
     /* ---- particles.js container ---- */
+
     #particles-js {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: #000000;
-        background-image: url("");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 50% 50%;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #000000;
+      background-image: url("");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
     }
 
     /* ---- stats.js ---- */
+
     .count-particles {
-        background: #000022;
-        position: absolute;
-        top: 48px;
-        left: 0;
-        width: 80px;
-        color: #13E8E9;
-        font-size: .8em;
-        text-align: left;
-        text-indent: 4px;
-        line-height: 14px;
-        padding-bottom: 2px;
-        font-family: Helvetica, Arial, sans-serif;
-        font-weight: bold;
+      background: #000022;
+      position: absolute;
+      top: 48px;
+      left: 0;
+      width: 80px;
+      color: #13E8E9;
+      font-size: .8em;
+      text-align: left;
+      text-indent: 4px;
+      line-height: 14px;
+      padding-bottom: 2px;
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: bold;
     }
 
     .js-count-particles {
-        font-size: 1.1em;
+      font-size: 1.1em;
     }
 
-    #stats,
-    .count-particles {
-        -webkit-user-select: none;
-        margin-top: 5px;
-        margin-left: 5px;
+    #stats, .count-particles {
+      -webkit-user-select: none;
+      margin-top: 5px;
+      margin-left: 5px;
     }
 
     #stats {
-        border-radius: 3px 3px 0 0;
-        overflow: hidden;
+      border-radius: 3px 3px 0 0;
+      overflow: hidden;
     }
 
     .count-particles {
-        border-radius: 0 0 3px 3px;
+      border-radius: 0 0 3px 3px;
     }
 
+    #main {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1000;
+    }
 
-#main{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    z-index: 1000;
-}
     .ml15 {
-        color:#fff;
-        font-weight: 800;
-        
-        text-transform: uppercase;
-        letter-spacing: 0.5em;
-        
-      }
-      .ml15 .word{
-        font-size: 4.8em;
-      }
+      color: #fff;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5em;
+    }
 
-      .ml15 .word,.ml15 .tagline {
-        text-align: center;
-        display: block;
-        letter-spacing: normal !important;
-        opacity: 0;
-      
-      }
+    .ml15 .word {
+      font-size: 4.8em;
+      cursor: pointer;
+    }
 
-      .ml15 .tagline{
-        font-size: 0.8em !important;
-        color:rgb(156, 205, 224);
-      }
+    .ml15 .word, .ml15 .tagline {
+      text-align: center;
+      display: block;
+      letter-spacing: normal !important;
+      opacity: 0;
+    }
 
-      .ml16 {
-        text-align: center;
-        color: #cabbbb;
-        padding: 40px 0;
-        font-weight: 800;
-        font-size: 2em;
-        text-transform: uppercase;
-        letter-spacing: 0.5em;
-        overflow: hidden;
-       
-      }
-      
-      
+    .ml15 .tagline {
+      font-size: 0.8em !important;
+      color: rgb(156, 205, 224);
+    }
 
-@media screen and (max-width:991px){
-  #particles-js {
-    position: fixed;
-}
-#main{
-  position: absolute;
-}
-.ml15 .word{
-  font-size: 2.8em;
-}
-}
+    .ml16 {
+      text-align: center;
+      color: #cabbbb;
+      padding: 40px 0;
+      font-weight: 800;
+      font-size: 2em;
+      text-transform: uppercase;
+      letter-spacing: 0.5em;
+      overflow: hidden;
+    }
+
+    @media screen and (max-width:991px) {
+      #particles-js {
+        position: fixed;
+      }
+      #main {
+        position: absolute;
+      }
+      .ml15 .word {
+        font-size: 2.8em;
+      }
+    }
