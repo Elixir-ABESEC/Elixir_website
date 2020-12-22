@@ -2,46 +2,71 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="css/style.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <title>Elixir</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Transition Animation Styles-->
+    <link rel="stylesheet" href="./css/transition.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </head>
 
 <body>
-    <div class="spinner">
-        <div class="blue-orbit leo">
+    <div class="root">
+
+        <div class="text">
+            <div class="spinner">
+                <div class="blue-orbit leo">
+                </div>
+
+                <div class="green-orbit leo">
+                </div>
+
+                <div class="red-orbit leo">
+                </div>
+
+                <div class="white-orbit w1 leo">
+                </div>
+                <div class="white-orbit w2 leo">
+                </div>
+                <div class="white-orbit w3 leo">
+                </div>
+            </div>
+            <div id="particles-js"></div>
+            <section id="main">
+                <h1 class="ml15">
+                    <button id="myBtn" class="word" onclick="play()">Elixir</button>
+                    <span class="tagline ">#1 Tech fest of ABESEC</span>
+                    <h1 class="ml16" id="soon">Coming Soon</h1>
+                </h1>
+            </section>
         </div>
 
-        <div class="green-orbit leo">
-        </div>
+        <!-- Transition Code -->
 
-        <div class="red-orbit leo">
-        </div>
+        <video autoplay muted loop id="myVideo">
+            <source src="./videos/lightSpeedFinal.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
 
-        <div class="white-orbit w1 leo">
-        </div>
-        <div class="white-orbit w2 leo">
-        </div>
-        <div class="white-orbit w3 leo">
-        </div>
+        <!-- Transition Code End-->
     </div>
-    <div id="particles-js"></div>
-    <section id="main">
-        <h1 class="ml15">
-            <span class="word">Elixir</span>
-            <span class="tagline ">#1 Tech fest of ABESEC</span>
-            <h1 class="ml16" id="soon">Coming Soon</h1>
-        </h1>
-    </section>
-</body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-<script src="js/stats.min.js"></script>
-<script src="js/particle.min.js"></script>
-<script src="js/index.js"></script>
 
+    <!-- Transition Script -->
+    <script src="./js/transition.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="js/stats.min.js"></script>
+    <script src="js/particle.min.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
 
 </html>
