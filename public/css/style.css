@@ -154,6 +154,7 @@
       background-size: cover;
       z-index:10;
       background-position: 50% 50%;
+      transition: 0.3s ease;
     }
 
     /* ---- stats.js ---- */
@@ -246,4 +247,8 @@
       .ml15 .word {
         font-size: 2.8em;
       }
+    }
+
+    .text{
+            transition: 0.3s ease;
     }
