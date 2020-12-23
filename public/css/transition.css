@@ -1,7 +1,7 @@
-/*******************************
-Author - w3schools
-link - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fullscreen_video
-*******************************/
+/*****************************************************************************************
+   Author - w3schools
+   link - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fullscreen_video
+ *****************************************************************************************/
 
 * {
    box-sizing: border-box;
@@ -28,19 +28,4 @@ body {
    color: #f1f1f1;
    width: 100%;
    padding: 20px;
-}
-
-#myBtn {
-   width: 200px;
-   font-size: 18px;
-   padding: 10px;
-   border: none;
-   background: #000;
-   color: #fff;
-   cursor: pointer;
-}
-
-#myBtn:hover {
-   background: #ddd;
-   color: black;
 }
