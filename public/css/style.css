@@ -247,3 +247,17 @@
         font-size: 2.8em;
       }
     }
+
+    /***************************
+    *       Cursor CSS
+    ***************************/
+
+    /* body */
+    .root {
+      cursor: url("../images/arrow-cursor.png"), auto;
+    }
+
+    /* Elixir Text */
+    .word {
+      cursor: url("../images/pointer-cursor.png"), auto; /* ERROR - Not Working */
+    }
