@@ -6,13 +6,14 @@ link - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fullscreen_
 let video = document.getElementById("myVideo");
 let btn = document.getElementById("myBtn");
 
-video.pause();
+document.querySelector(".background").style.visibility = "hidden";
 
 function play() {
    video.play();
    document.querySelector(".text").style.visibility = "hidden";
    setTimeout(function () {
-      video.pause();
+      document.querySelector(".background").style.visibility = "normal";
+      // video.pause();
       // document.getElementById("myVideo").style.visibility = "hidden";
    }, 3900);
 }

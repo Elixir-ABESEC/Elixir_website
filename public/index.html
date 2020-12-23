@@ -2,24 +2,22 @@
 <html lang="en">
 
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Elixir</title>
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
     <!-- Transition Animation Styles-->
-    <link rel="stylesheet" href="./css/transition.css">
+    <link rel="stylesheet" href="./css/transition.css" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </head>
 
 <body>
     <div class="root">
-
         <div class="text">
             <div class="spinner">
                 <div class="blue-orbit leo"></div>
@@ -33,7 +31,7 @@
             <section id="main">
                 <h1 class="ml15">
                     <span class="word" onclick="play()">Elixir</span>
-                    <span class="tagline ">#1 Tech fest of ABESEC</span>
+                    <span class="tagline">#1 Tech fest of ABESEC</span>
                     <h1 class="ml16" id="soon">Coming Soon</h1>
                 </h1>
             </section>
@@ -41,12 +39,21 @@
 
         <!-- Transition Code -->
 
-        <video autoplay muted loop id="myVideo">
-            <source src="./videos/lightSpeedHigh.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-        </video>
+        <div class="transition-video">
+            <video id="myVideo" poster="../public/images/starBG.png">
+                <source src="./videos/lightSpeedHighEnd.mp4" type="video/mp4" />
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!-- For static background after end of transition animation | CSS code in transition.css-->
+        <div class="background">
+
+        </div>
 
         <!-- Transition Code End-->
+
+
     </div>
 
     <!-- Transition Script -->
@@ -57,7 +64,6 @@
     <script src="js/stats.min.js"></script>
     <script src="js/particle.min.js"></script>
     <script src="js/index.js"></script>
-
 </body>
 
 </html>

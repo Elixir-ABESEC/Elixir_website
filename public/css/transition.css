@@ -7,10 +7,23 @@
    box-sizing: border-box;
 }
 
+.background {
+   background-image: url("../images/starBG.png");
+}
+
 body {
    margin: 0;
    font-family: Arial;
    font-size: 17px;
+}
+
+.content {
+   position: fixed;
+   bottom: 0;
+   background: rgba(0, 0, 0, 0.5);
+   color: #f1f1f1;
+   width: 100%;
+   padding: 20px;
 }
 
 #myVideo {
@@ -21,11 +34,9 @@ body {
    min-height: 100%;
 }
 
-.content {
-   position: fixed;
-   bottom: 0;
-   background: rgba(0, 0, 0, 0.5);
-   color: #f1f1f1;
-   width: 100%;
-   padding: 20px;
+video {
+   position: absolute;
+   top: -1.75vw;
+   left: -11vw;
+   margin: auto;
 }
