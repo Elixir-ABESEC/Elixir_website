@@ -1,5 +1,9 @@
 body {
-	background: white;
+    background-image: url('img.png');
+	background-repeat: no-repeat;
+	background-size: cover; 
+	
+	
 }
 .node {
 	display: table;
@@ -11,7 +15,7 @@ body {
 	background: white;
 	border: 1px solid black;
 	color: black;
-	font-size: 12px;
+	font-size: 13px;
 	font-weight: bold;
 }
 
@@ -38,23 +42,45 @@ body {
 	height: 50px;
 }
 .node .thumb img {
-	height: 150%;
+	height: 160%;
 	width: auto;
 }
 
+.node .gitlogo {
+	display:table-cell;
+	padding: 0px;
+	width: 10px;
+	height: 1px;
+}
+.node .gitlogo img {
+	height: 30%;
+	width: auto;
+}
+.node .linkedinlogo {
+	display:table-cell;
+	padding: 0px;
+	width: 10px;
+	height: 10px;
+}
+.node .linkedinlogo img {
+	height: 30%;
+	width: auto;
+}
 .node .details {
 	display: table-cell;
 	vertical-align: middle;
 }
 
+
 .node .name {
 	color: black;
 }
 
-.node .born, .node .died {
-	font-size: 10px;
+.node .Designation {
+	font-size: 12px;
 	color: grey;
 }
+
 .node .lbl {
 	font-weight: normal;
 }
