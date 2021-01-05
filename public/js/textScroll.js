@@ -16,6 +16,6 @@ function scrollFunction() {
    document.querySelector(".heading").style.fontSize = "10px";
    document.querySelector(".main-text").style.position = "absolute";
    document.querySelector(".main-text").style.top = "200px";
-   document.querySelector(".main-text").style.transition = "0.3qs";
+   document.querySelector(".main-text").style.transition = "1s";
 
 }
