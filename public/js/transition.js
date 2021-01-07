@@ -6,11 +6,11 @@ link - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fullscreen_
 let video = document.getElementById("myVideo");
 let btn = document.getElementById("myBtn");
 
-document.querySelector(".background").style.visibility = "hidden";
+// document.querySelector(".background").style.visibility = "hidden";
 
 function play() {
    video.play();
-   document.querySelector(".text").style.visibility = "hidden";
+   document.querySelector(".text-body").style.visibility = "hidden";
    setTimeout(function () {
       document.querySelector(".background").style.visibility = "normal";
       // video.pause();
